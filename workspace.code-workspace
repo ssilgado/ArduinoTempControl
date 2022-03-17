@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "DotnetResources",
+			"path": "TempController.DotNet"
+		},
+		{
+			"name": "WirelessCommunicationComponent",
+			"path": "TempController.Communication"
+		},
+		{
+			"name": "IRLogicComponent",
+			"path": "TempController.IRLogic"
+		},
+		{
+			"name": "Root",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
