@@ -14,5 +14,14 @@ pool:
   vmImage: windows-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+# Copy AzureDeploy Files To Staging Directory
+- task: CopyFiles@2
+  inputs:
+    Contents: '**\AzureDeploy\**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+# Publish Artifact
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
+    artifactName: 'TempControllerArtifact'
