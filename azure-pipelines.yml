@@ -17,6 +17,7 @@ steps:
 # Copy AzureDeploy Files To Staging Directory
 - task: CopyFiles@2
   inputs:
+    SourceFolder: '$(Build.SourcesDirectory)\TempController.DotNet'
     Contents: '**\AzureDeploy\**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
