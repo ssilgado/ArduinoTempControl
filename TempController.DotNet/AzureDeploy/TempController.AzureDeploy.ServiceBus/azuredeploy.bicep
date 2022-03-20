@@ -4,7 +4,7 @@
   'prd'
 ])
 @description('The deployment environment')
-param env string = 'dev'
+param env string
 
 @description('The location of the resource deployment')
 param location string = resourceGroup().location
