@@ -21,6 +21,14 @@ steps:
     Contents: '**\AzureDeploy\**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
+# Copy Script Files To Staging Directory
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)\TempController.DotNet'
+    Contents: '**\Scripts\**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)\Scripts'
+    flattenFolders: true
+
 # Publish Artifact
 - task: PublishBuildArtifacts@1
   inputs:
