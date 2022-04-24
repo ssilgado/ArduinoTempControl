@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <IRremote.hpp>
 #include <ac_LG.hpp>
+#include <Wire.h>
 #include "main.hpp"
 
 
@@ -37,6 +38,19 @@ void setup()
   // Initialize manual control buttons
   pinMode(ON_OFF_BUTTON_PIN, INPUT);
   pinMode(HEATER_AC_BUTTON_PIN, INPUT);
+
+  // Initialize the I2C bus
+  Wire.begin(4);
+  Wire.onReceive(receiveEvent);
+}
+
+void receiveEvent(int howMany)
+{
+  int x = Wire.read();
+  if (x == 1)
+  {
+    togglePowerState();
+  }
 }
 
 void loop()
