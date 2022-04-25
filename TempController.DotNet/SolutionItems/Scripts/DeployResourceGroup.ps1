@@ -5,7 +5,7 @@ param(
 
     [Parameter()]
     [Description("The location of the resource group.")]
-    [string]$Location,
+    [string]$Location
 )
 
 Write-Host "Creating resource group $Name in location $Location..."

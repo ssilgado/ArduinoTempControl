@@ -13,7 +13,7 @@ param(
 
     [parameter()]
     [Description("The path of the parameters file.")]
-    [string]$ParametersFilePath,
+    [string]$ParametersFilePath
 )
 
 Write-Host "Deploying to Resource Group $ResourceGroupName"
