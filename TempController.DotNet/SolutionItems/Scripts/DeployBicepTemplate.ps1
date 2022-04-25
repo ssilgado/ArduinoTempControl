@@ -1,18 +1,14 @@
 param(
-    [parameter()]
-    [Description("The name of the deployment.")]
+    [parameter( HelpMessage = "The name of the deployment.")]
     [string]$Name,
 
-    [parameter()]
-    [Description("The name of the resource group to deploy to.")]
+    [parameter( HelpMessage = "The name of the resource group to deploy to.")]
     [string]$ResourceGroupName,
 
-    [parameter()]
-    [Description("The path of the bicep file.")]
+    [parameter( HelpMessage = "The path of the bicep file.")]
     [string]$TemplateFilePath,
 
-    [parameter()]
-    [Description("The path of the parameters file.")]
+    [parameter( HelpMessage = "The path of the parameters file.")]
     [string]$ParametersFilePath
 )
 

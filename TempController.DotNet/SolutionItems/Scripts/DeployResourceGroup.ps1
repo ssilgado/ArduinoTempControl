@@ -1,10 +1,8 @@
 param(
-    [Parameter()]
-    [Description("The name of the resource group to create.")]
+    [Parameter( HelpMessage = "The name of the resource group to create.")]
     [string]$Name,
 
-    [Parameter()]
-    [Description("The location of the resource group.")]
+    [Parameter( HelpMessage = "The location of the resource group.")]
     [string]$Location
 )
 
