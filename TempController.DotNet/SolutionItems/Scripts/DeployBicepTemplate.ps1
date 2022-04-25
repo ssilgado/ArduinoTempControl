@@ -21,10 +21,10 @@ Write-Host "Parameters File: $ParametersFilePath"
 $Parameters = ConvertFrom-Json -InputObject (Get-Content $ParametersFilePath)
 
 # Deploy the template
-az group deployment create \
-    --name $Name \
-    --resource-group $ResourceGroupName \
-    --template-file $TemplateFilePath \
+az group deployment create `
+    --name $Name `
+    --resource-group $ResourceGroupName `
+    --template-file $TemplateFilePath `
     --parameters $Parameters
 
 Write-Host "Deployment complete"
