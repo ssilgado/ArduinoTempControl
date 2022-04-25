@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TempController.WebAPI", "TempController.WebAPI\TempController.WebAPI.csproj", "{98890826-E6C1-4C44-BB51-B4ADB89247BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +12,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98890826-E6C1-4C44-BB51-B4ADB89247BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98890826-E6C1-4C44-BB51-B4ADB89247BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98890826-E6C1-4C44-BB51-B4ADB89247BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98890826-E6C1-4C44-BB51-B4ADB89247BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

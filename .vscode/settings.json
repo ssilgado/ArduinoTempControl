@@ -1,5 +1,6 @@
 {
     "files.exclude": {
         "TempController*": true
-    }
+    },
+    "azureFunctions.projectSubpath": "TempController.DotNet/TempController.WebAPI"
 }
